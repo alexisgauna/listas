@@ -5,74 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas</title>
+    <title>Formulario de registro</title>
 </head>
-
+ 
 <body>
-    <h1>
-        Curriculum Vitae de Lionel Messi
-    </h1>
+ 
     <header>
-        <nav>
-            <h2>
-                Datos personales
-            </h2>
-        </nav>
-        <nav>
-            <ul>
-                <li>
-                    
-                        Nombre completo: <strong> Lionel Andres Messi Cuccitni </strong>
-                    
-                </li>
-                <li>
-                    
-                        Fecha de nacimiento: <strong> 24/6/1987</strong>
-                    
-                </li>
-                <li>
-                    
-                        Lugar de nacimiento: <strong> Rosario - Argentina </strong>
-                    
-                </li>
-            </ul>
-        </nav>
+        <h1>
+            Formulario de registro
+        </h1>
     </header>
+
     <main>
-        <section>
-            <h1>
-              Trayectoria
-            </h1>
-            <ul>
-                <li>
-                    1994-1999: <strong> Newell's Old Boys (Inferiores) </strong>
-                </li>
-                <li>
-                    2000-2021: <strong> Barcelona F.C. </strong>
-                </li>
-                <li>
-                    2021-2022: <strong> Paris Saint Germain </strong>
-                </li>
-            </ul>
-        </section>
+        <div>
+            <section>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" placeholder="Nombre" required>
+            </section>
+        </div>
+        <br>
+        <div>
+            <section>
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido" placeholder="Aplellido" required> 
+            </section>
+        </div>
+        <br>
+        <div>
+            Modalidad de cursada:
+            <input type="radio" name="cursada" id="ondemand">
+            <label for="ondemand">Ondemand</label>
+
+            <input type="radio" name="cursada" id="en vivo">
+            <label for="en vivo">En vivo</label>
+        </div>
+        <br>
+        <div>
+            <section>
+                <label for="Correo">Correo:</label>
+                <input type="text" placeholder="Correo" required >
+            </section>
+        </div>
+
     </main>
+    <br>
     <footer>
-         <h2>
-            Titulos con la seleccion
-         </h2>
-         <div>
-            <ul>
-                <li>
-                    2008: <strong> Torneo Olimpico de Futbol</strong>
-                </li>
-                <li>
-                    2021: <strong>Copa America Brasil 2021</strong>
-                </li>
-                <li>
-                    2022: <strong>Finalissima</strong>
-                </li>
-            </ul>
-         </div>
+        <div>
+            <input type="checkbox" name="Terminos" id="Deseo" required> 
+            <label for="Deseo">Deseo recibir informacion sobre nuevos posteos en la plataforma de Nucba </label> 
+        
+        </div>
+        <div>
+            <input type="checkbox" name="Declaro" id="Declaro" required>
+            <label for="Declaro">Declaro que lei los terminos y condiciones y estoy listo para convertirme en desarrollador web full stack.</label>
+        </div>
+        <br>
+        <div>
+        <input type="button" value="Enviar">
+    </div>
     </footer>
 </body>
 
